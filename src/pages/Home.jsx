@@ -1,5 +1,6 @@
 import ServiceCard from "../components/serviceCard.jsx";
 import backgroundImage from "../assets/main-back.jpg";
+import womenImage from "../assets/women.jpg";
 
 const Home = () => (
   <div>
@@ -30,29 +31,13 @@ const Home = () => (
       <div className="container mx-auto flex flex-wrap">
 
         <div
-          className="bg-customYellow rounded-full animate-custom-animation will-change-transform opacity transition-opacity duration-[1500ms] absolute w-[366px] h-[366px] top-[60px] right-[-70px]"
+          className="bg-customYellow rounded-full animate-custom-animation will-change-transform opacity transition-opacity duration-[1500ms] absolute w-[366px] h-[366px] top-[60px] right-[0px]"
           style={{ animationDelay: "500ms" }}
         ></div>
-        <div className="flex z-10 flex-wrap w-full lg:w-2/3 mx-auto mb-60px">
-          <div className="w-full md:w-1/2 p-4 text-left">
+        <div className="h-[80vh] pt-[10%] flex z-10 flex-wrap w-full lg:w-2/3 mx-auto mb-[6%]">
+          <div className="w-full md:w-1/2 text-left flex flex-col item-center justify-center p-[20px]">
             <h3 className="text-xl font-bold mb-4">Web Development</h3>
-            <p className="text-gray-700 mb-4">
-              Quickly incentivize impactful action items before tactical
-              collaboration and idea-sharing.{" "}
-              <a href="#" className="text-blue-500 underline">
-                through
-              </a>{" "}
-              wireless opportunities. Progressively network performance-based
-              services for functionalized testing procedures.
-            </p>
-            <p className="text-gray-500 text-sm">
-              Image by{" "}
-              <a
-                href="https://www.freepik.com/photos/people"
-                className="text-blue-500 underline"
-              >
-                Freepik
-              </a>
+            <p className="text-gray-700 mb-4">Quickly incentivize impactful action items before tactical collaboration and idea-sharing. Monotonically engage market-driven intellectual capital  wireless opportunities. Progressively network performance based services for functionalized testing procedures.
             </p>
             <a
               href="#"
@@ -61,12 +46,12 @@ const Home = () => (
               Learn More
             </a>
           </div>
-          <div className="w-full md:w-1/2 p-4">
+          <div className="w-full md:w-1/2">
             <div
-              className="h-64 bg-cover bg-center rounded-md shadow-lg"
-              style={{
-                backgroundImage: "url('https://via.placeholder.com/300')",
-              }}
+              className="h-full bg-cover bg-center shadow-lg"
+
+              style={{ backgroundImage: `url(${womenImage})` }}
+              
             ></div>
           </div>
         </div>
