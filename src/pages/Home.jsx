@@ -9,15 +9,15 @@ const Home = () => (
         className="bg-cover bg-center h-[1080px] flex items-center justify-center flex-col"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <h2 className="text-customGreen relative">Get the website</h2>
-        <h1 className="text-4xl text-customGreen font-bold">Of your dreams</h1>
-        <p className="text-customGreen mx-20 mt-3 mb-10">
+        <h2 className="text-6xl font-medium text-customGreen relative">Get the website</h2>
+        <h1 className="text-9xl uppercase text-customGreen font-bold">Of your dreams</h1>
+        <p className="text-3xl text-customGreen mx-20 mt-3 mb-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud.
         </p>
-        <button className="active:bg-black rounded-full hover:bg-customGreen bg-customYellow text-customGreen hover:text-white px-6 py-2">
-          Get Started
+        <button className="active:bg-black rounded hover:bg-customGreen bg-customYellow text-customGreen hover:text-white px-20 py-5">
+          <p className="">Get Started</p>
         </button>
       </div>
     </section>
@@ -27,13 +27,13 @@ const Home = () => (
       className="relative flex flex-col justify-center items-center bg-gray-200 py-12"
       id="carousel_1e99"
     >
-      <div className="container mx-auto flex flex-wrap items-center justify-center">
+      <div className="container mx-auto flex flex-wrap">
 
         <div
-          className="bg-customYellow rounded-full animate-custom-animation will-change-transform opacity transition-opacity duration-[1500ms] w-[366px] h-[366px] mt-[60px] mr-[-170px] ml-auto"
+          className="bg-customYellow rounded-full animate-custom-animation will-change-transform opacity transition-opacity duration-[1500ms] absolute w-[366px] h-[366px] top-[60px] right-[-70px]"
           style={{ animationDelay: "500ms" }}
         ></div>
-        <div className="flex flex-wrap w-full lg:w-2/3 mt-[-215px] mx-auto mb-60px">
+        <div className="flex z-10 flex-wrap w-full lg:w-2/3 mx-auto mb-60px">
           <div className="w-full md:w-1/2 p-4 text-left">
             <h3 className="text-xl font-bold mb-4">Web Development</h3>
             <p className="text-gray-700 mb-4">
