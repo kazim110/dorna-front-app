@@ -1,0 +1,63 @@
+@keyframes customAnimationIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-customAnimationIn {
+    animation: customAnimationIn 1.5s ease-in-out;
+  }
+  
+  @keyframes customAnimationIn2 {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-customAnimationIn2 {
+    animation: customAnimationIn2 1.5s ease-out;
+    opacity: 0; /* Ensures hidden before animation starts */
+    animation-fill-mode: forwards; /* Maintains final state after animation */
+  }
+
+  @keyframes customAnimationIn3 {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-customAnimationIn3 {
+    animation: customAnimationIn3 1.5s ease-out;
+    opacity: 0; /* Ensures hidden before animation starts */
+    animation-fill-mode: forwards; /* Maintains final state after animation */
+  }
+
+  /* ContactUs.css */
+.animated {
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
