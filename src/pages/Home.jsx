@@ -217,11 +217,11 @@ const Home = () => {
     </section>
     <section
       id="features"
-      className="h-[130vh] bg-cover bg-center py-12 px-6"
+      className="h-[130vh] bg-cover bg-center py-12 px-6 flex justify-center"
       style={{ backgroundImage: `url(${secBack})` }}
     >
-      <div className="flex flex-col items-center justify-center">
-        <div className="max-w-5xl text-center">
+      <div className="flex flex-col items-center justify-center w-[100vh] absolute left-[14%]">
+        <div className="max-w-5xl">
           <h2 className="text-3xl font-bold mb-4">Epic Design and Engineering</h2>
           <p className="text-lg text-gray-700 mb-6">
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -233,7 +233,7 @@ const Home = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col items-start bg-green-300 text-white rounded-lg p-6 shadow-lg transition-transform duration-500 hover:scale-105"
+              className="flex flex-col items-start bg-customYellow text-white rounded-lg p-6 shadow-lg transition-transform duration-500 hover:scale-105"
             >
               <div className="flex items-center justify-center w-12 h-12 bg-white text-green-600 rounded-full mb-4">
                 {/* Replace with actual SVG */}
@@ -248,7 +248,7 @@ const Home = () => {
     </section>
     <section id="team" className="relative bg-gray-100 py-12 flex flex-row items-center">
       {/* Background Shape */}
-      <div className="absolute top-0 left-0 w-[50%] h-full bg-green-300"></div>
+      <div className="absolute top-0 left-0 w-[50%] h-full bg-customYellow"></div>
 
       {/* Team Circle Images */}
       <div className="relative flex flex-col flex-wrap justify-center items-center gap-6 mt-20">
