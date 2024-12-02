@@ -255,27 +255,27 @@ const Home = () => {
         <div
           className="w-40 h-40 bg-cover bg-center rounded-full animate-customAnimationIn"
           style={{
-            backgroundImage: "url('/path-to-image1.jpg')",
+            backgroundImage: `url(${womenImage})`,
           }}
         ></div>
         <div
           className="w-48 h-48 bg-cover bg-center rounded-full animate-customAnimationIn"
           style={{
-            backgroundImage: "url('/path-to-image2.jpg')",
+            backgroundImage: `url(${womenImage})`,
             animationDelay: "500ms",
           }}
         ></div>
         <div
           className="w-36 h-36 border-4 border-green-300 bg-cover bg-center rounded-full animate-customAnimationIn"
           style={{
-            backgroundImage: "url('/path-to-image3.jpg')",
+            backgroundImage: `url(${womenImage})`,
             animationDelay: "750ms",
           }}
         ></div>
         <div
           className="w-40 h-40 bg-cover bg-center rounded-full animate-customAnimationIn"
           style={{
-            backgroundImage: "url('/path-to-image4.jpg')",
+            backgroundImage: `url(${womenImage})`,
             animationDelay: "250ms",
           }}
         ></div>
