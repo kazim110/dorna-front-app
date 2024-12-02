@@ -389,37 +389,37 @@ const Home = () => {
             <div className="carousel-items flex flex-row">
               {[
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/e9b7d28c1320536f89b69106/nb.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 1",
                   text: "Sample Text 1",
                 },
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/973e7b71cc2e5de2a6364059/bvvvvv.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 2",
                   text: "Sample Text 2",
                 },
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/ac3b09f013c455f1be302b93/2.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 3",
                   text: "Sample Text 3",
                 },
                 {
-                  src: "//images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/9aed9ba7ac2455269e565127/debossed-logo-mockup-kraft-paper_149660-758.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 4",
                   text: "Sample Text 4",
                 },
                 {
-                  src: "//images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/2fab027daf5856dfa9864afe/3d-logo-mockup-modern-facade-sign_145275-209.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 5",
                   text: "Sample Text 5",
                 },
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/4f42bf0df1b3556db8f7990d/jhjj.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 6",
                   text: "Sample Text 6",
                 },
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1e7e04fd36fb5e83aa6dab78/1.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 7",
                   text: "Sample Text 7",
                 },
@@ -472,17 +472,6 @@ const Home = () => {
         </div>
         <p className="text-xl mt-4">
           Sample text. Click to select the text box. Click again or double click to start editing the text.
-        </p>
-        <p className="mt-4">
-          Image by{" "}
-          <a
-            href="https://www.freepik.com/psd/mockup"
-            className="text-blue-500 underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Freepik
-          </a>
         </p>
       </div>
     </section>
