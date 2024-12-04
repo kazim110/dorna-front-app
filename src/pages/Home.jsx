@@ -306,56 +306,17 @@ const Home = () => {
         </h2>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-lg p-6 text-center animate-customAnimationIn2"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+            <div key={index}
+              className="flex flex-col items-start text-start bg-none p-6 text-center animate-customAnimationIn2"
+              style={{ animationDelay: `${index * 100}ms` }}>
               <div
-                className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-green-300 bg-cover bg-center"
+                className="w-24 h-24 mx-auto mb-4 rounded-full border-8 border-customYellow bg-cover bg-center"
                 style={{ backgroundImage: `url(${testimonial.image})` }}
               ></div>
               <p className="text-gray-600 italic mb-2">{testimonial.text}</p>
               <h6 className="text-gray-800 font-semibold">{testimonial.name}</h6>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-    <section id="memorable-websites" className="bg-gray-100 py-12">
-      <div className="container mx-auto px-4">
-        {/* Section Title */}
-        <h2
-          className="text-4xl font-bold text-center mb-8 animate-customAnimationIn3"
-          style={{ animationDelay: "500ms" }}
-        >
-          Memorable Websites That Sell
-        </h2>
-
-        {/* Statistics Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className={`flex items-center justify-center p-6 rounded-full shadow-lg animate-customAnimationIn3 ${stat.bgColor}`}
-              style={{ animationDelay: `${index * 300}ms` }}
-            >
-              <div className="text-center">
-                <h3
-                  className={`text-4xl font-semibold ${stat.textColor}`}
-                  style={{ animationDuration: "3000ms" }}
-                >
-                  {stat.percentage}
-                </h3>
-                <p
-                  className={`mt-4 text-lg ${stat.textColor} animate-customAnimationIn3`}
-                  style={{ animationDuration: "1000ms", animationDelay: stat.textDelay }}
-                >
-                  {stat.text}
-                </p>
-              </div>
             </div>
           ))}
         </div>
