@@ -29,7 +29,7 @@ const GallerySection = () => {
     
     
     return (
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-3xl mx-auto py-10">
         <div className="mb-4">
             <h2 className="text-2xl font-bold">Slideshow Indicators</h2>
             <p className="text-gray-600">
@@ -70,7 +70,7 @@ const GallerySection = () => {
                 key={index}
                 src={slide.src}
                 alt={slide.alt}
-                className={`w-24 h-16 object-cover cursor-pointer transition-opacity ${
+                className={`w-1/3 h-24 object-cover cursor-pointer transition-opacity ${
                 currentSlide === index ? "opacity-100" : "opacity-50"
                 } hover:opacity-100`}
                 onClick={() => changeSlide(index)}

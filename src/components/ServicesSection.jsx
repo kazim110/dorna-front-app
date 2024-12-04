@@ -43,10 +43,10 @@ const ServicesSection = () => {
     return (
         <section
         id="features"
-        className="h-[130vh] bg-cover bg-center py-12 px-6 flex justify-center"
+        className="h-[130vh] bg-cover bg-center flex justify-center"
         style={{ backgroundImage: `url(${secBack})` }}
       >
-        <div className="flex flex-col items-center justify-center w-[100vh] absolute left-[14%]">
+        <div className="flex flex-col items-center justify-center w-[110vh] absolute left-[14%] mt-10">
           <div className="max-w-5xl">
             <h2 className="text-3xl font-bold mb-4">Epic Design and Engineering</h2>
             <p className="text-lg text-gray-700 mb-6">
