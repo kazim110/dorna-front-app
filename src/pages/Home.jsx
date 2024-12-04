@@ -2,6 +2,7 @@ import ServiceCard from "../components/serviceCard.jsx";
 import backgroundImage from "../assets/main-back.jpg";
 import womenImage from "../assets/women.jpg";
 import './Home.css';
+import secBack from "../assets/sec-back.jpg";
 
 const Home = () => {
 
@@ -128,16 +129,16 @@ const Home = () => {
 
     {/* Carousel Section */}
     <section
-      className="relative flex flex-col justify-center items-center bg-gray-200 py-12"
+      className="relative flex flex-col justify-center items-center bg-gray-200 pt-[12%] pb-[10px]"
       id="carousel_1e99"
     >
-      <div className="container mx-auto flex flex-wrap">
+      <div className="relative w-[220vh] h-[100vh] border container mx-auto flex flex-wrap">
 
         <div
-          className="bg-customYellow rounded-full animate-custom-animation will-change-transform opacity transition-opacity duration-[1500ms] absolute w-[366px] h-[366px] top-[60px] right-[0px]"
+          className="bg-customYellow rounded-full animate-custom-animation will-change-transform opacity transition-opacity duration-[1500ms] absolute w-[366px] h-[366px] top-0 right-0 translate-x-1/6 -translate-y-1/3"
           style={{ animationDelay: "500ms" }}
         ></div>
-        <div className="h-[80vh] pt-[10%] flex z-10 flex-wrap w-full lg:w-2/3 mx-auto mb-[6%]">
+        <div className="py-8 flex z-10 flex-wrap w-full lg:w-2/3 mx-auto mb-[6%]">
           <div className="w-full md:w-1/2 text-left flex flex-col item-center justify-center p-[20px]">
             <h3 className="text-xl font-bold mb-4">Web Development</h3>
             <p className="text-gray-700 mb-4">Quickly incentivize impactful action items before tactical collaboration and idea-sharing. Monotonically engage market-driven intellectual capital  wireless opportunities. Progressively network performance based services for functionalized testing procedures.
@@ -160,16 +161,18 @@ const Home = () => {
         </div>
       </div>
     </section>
-    <section className="relative bg-teal-500 py-10" id="carousel_02fc">
-      <div className="container mx-auto">
+    <section className="relative bg-customYellow py-10" id="carousel_02fc">
+      <div className="container mx-auto flex justify-center">
         {/* Decorative SVG Shape */}
-        <div className="h-[100%] w-[100%] py-10 px-20 absolute top-0 left-0 transform delay-500">
+        <div className="h-[100%] w-[100%] pt-24 flex justify-center absolute top-0 left-0 transform delay-500">
           <svg
-            className="h-[100%] w-[100%] text-teal-300"
+            className="h-[130vh] w-[180vh]"
             preserveAspectRatio="none"
             viewBox="0 0 160 150"
           >
-            <path d="M43.2,126.9c14.2,1.3,27.6,7,39.1,15.6c8.3,6.1,19.4,10.3,32.7,5.3c11.7-4.4,18.6-17.4,21-30.2c2.6-13.3,8.1-25.9,15.7-37.1
+            <path 
+            className="fill-white opacity-50"
+            d="M43.2,126.9c14.2,1.3,27.6,7,39.1,15.6c8.3,6.1,19.4,10.3,32.7,5.3c11.7-4.4,18.6-17.4,21-30.2c2.6-13.3,8.1-25.9,15.7-37.1
               c8.3-12.1,10.8-27.9,5.3-42.7C150.5,20.3,134.6,9,117,7.6C107.9,6.9,98.8,5,90.1,1.9C83-0.6,75-0.7,67.4,2.1
               c-9.9,3.7-17,11.6-20.1,21c-3.3,10.1-10.9,18-20.6,22.2c-0.1,0-0.1,0.1-0.2,0.1c-20.3,8.9-31,32-24.6,53.2
               C6.9,115.6,25.2,125.2,43.2,126.9z"
@@ -178,15 +181,15 @@ const Home = () => {
         </div>
 
         {/* Main Content */}
-        <div className="relative">
+        <div className="relative w-[80%] mt-24">
           <img
             src="//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/5f2cac1f3cfd566a91b4507b/gffgfgfg-min.jpg"
             alt=""
-            className="rounded-lg shadow-lg w-full"
+            className="rounded-lg shadow-lg w-[85%] justify-self-start"
           />
 
           {/* List Section */}
-          <div className="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="w-[85%] grid gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-self-end -translate-y-1/3">
             {[1, 2, 3].map((item) => (
               <div
                 key={item}
@@ -209,92 +212,70 @@ const Home = () => {
               </div>
             ))}
           </div>
-
-          {/* Attribution */}
-          <p className="mt-6 text-sm text-gray-500">
-            Images from{" "}
-            <a
-              href="https://www.freepik.com/psd/mockup"
-              className="text-teal-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Freepik
-            </a>
-          </p>
         </div>
       </div>
     </section>
     <section
       id="features"
-      className="flex flex-col items-center justify-center bg-cover bg-center py-12 px-6"
-      style={{ backgroundImage: `url('/path-to-image.jpg')` }}
+      className="h-[130vh] bg-cover bg-center py-12 px-6 flex justify-center"
+      style={{ backgroundImage: `url(${secBack})` }}
     >
-      <div className="max-w-5xl text-center">
-        <h2 className="text-3xl font-bold mb-4">Epic Design and Engineering</h2>
-        <p className="text-lg text-gray-700 mb-6">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <p className="text-gray-500">
-          Image from{" "}
-          <a
-            href="https://www.freepik.com/photos/desk-flatlay"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
-          >
-            Freepik
-          </a>
-        </p>
-      </div>
+      <div className="flex flex-col items-center justify-center w-[100vh] absolute left-[14%]">
+        <div className="max-w-5xl">
+          <h2 className="text-3xl font-bold mb-4">Epic Design and Engineering</h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-start bg-green-300 text-white rounded-lg p-6 shadow-lg transition-transform duration-500 hover:scale-105"
-          >
-            <div className="flex items-center justify-center w-12 h-12 bg-white text-green-600 rounded-full mb-4">
-              {/* Replace with actual SVG */}
-              <span>{feature.icon}</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-start bg-customYellow text-white rounded-lg p-6 shadow-lg transition-transform duration-500 hover:scale-105"
+            >
+              <div className="flex items-center justify-center w-12 h-12 bg-white text-green-600 rounded-full mb-4">
+                {/* Replace with actual SVG */}
+                <span>{feature.icon}</span>
+              </div>
+              <h5 className="text-xl font-semibold mb-2">{feature.title}</h5>
+              <p className="text-gray-800">{feature.description}</p>
             </div>
-            <h5 className="text-xl font-semibold mb-2">{feature.title}</h5>
-            <p className="text-gray-800">{feature.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
     <section id="team" className="relative bg-gray-100 py-12 flex flex-row items-center">
       {/* Background Shape */}
-      <div className="absolute top-0 left-0 w-[50%] h-full bg-green-300"></div>
+      <div className="absolute top-0 left-0 w-[50%] h-full bg-customYellow"></div>
 
       {/* Team Circle Images */}
       <div className="relative flex flex-col flex-wrap justify-center items-center gap-6 mt-20">
         <div
           className="w-40 h-40 bg-cover bg-center rounded-full animate-customAnimationIn"
           style={{
-            backgroundImage: "url('/path-to-image1.jpg')",
+            backgroundImage: `url(${womenImage})`,
           }}
         ></div>
         <div
           className="w-48 h-48 bg-cover bg-center rounded-full animate-customAnimationIn"
           style={{
-            backgroundImage: "url('/path-to-image2.jpg')",
+            backgroundImage: `url(${womenImage})`,
             animationDelay: "500ms",
           }}
         ></div>
         <div
           className="w-36 h-36 border-4 border-green-300 bg-cover bg-center rounded-full animate-customAnimationIn"
           style={{
-            backgroundImage: "url('/path-to-image3.jpg')",
+            backgroundImage: `url(${womenImage})`,
             animationDelay: "750ms",
           }}
         ></div>
         <div
           className="w-40 h-40 bg-cover bg-center rounded-full animate-customAnimationIn"
           style={{
-            backgroundImage: "url('/path-to-image4.jpg')",
+            backgroundImage: `url(${womenImage})`,
             animationDelay: "250ms",
           }}
         ></div>
@@ -408,37 +389,37 @@ const Home = () => {
             <div className="carousel-items flex flex-row">
               {[
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/e9b7d28c1320536f89b69106/nb.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 1",
                   text: "Sample Text 1",
                 },
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/973e7b71cc2e5de2a6364059/bvvvvv.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 2",
                   text: "Sample Text 2",
                 },
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/ac3b09f013c455f1be302b93/2.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 3",
                   text: "Sample Text 3",
                 },
                 {
-                  src: "//images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/9aed9ba7ac2455269e565127/debossed-logo-mockup-kraft-paper_149660-758.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 4",
                   text: "Sample Text 4",
                 },
                 {
-                  src: "//images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/2fab027daf5856dfa9864afe/3d-logo-mockup-modern-facade-sign_145275-209.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 5",
                   text: "Sample Text 5",
                 },
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/4f42bf0df1b3556db8f7990d/jhjj.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 6",
                   text: "Sample Text 6",
                 },
                 {
-                  src: "//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1e7e04fd36fb5e83aa6dab78/1.jpg",
+                  src: `url(${womenImage})`,
                   title: "Sample Title 7",
                   text: "Sample Text 7",
                 },
@@ -491,17 +472,6 @@ const Home = () => {
         </div>
         <p className="text-xl mt-4">
           Sample text. Click to select the text box. Click again or double click to start editing the text.
-        </p>
-        <p className="mt-4">
-          Image by{" "}
-          <a
-            href="https://www.freepik.com/psd/mockup"
-            className="text-blue-500 underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Freepik
-          </a>
         </p>
       </div>
     </section>
