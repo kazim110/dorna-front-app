@@ -3,11 +3,10 @@ import React ,{useState} from "react";
 const ContactSection = () => {
 
     return (
-        <section className="bg-black text-white py-16" id="carousel_a12b">
-        <div className="w-full bg-primary-500 h-1/4"></div> {/* Custom color block */}
-        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
-          {/* Contact Form */}
-          <div className="p-8 bg-white text-black rounded-lg shadow-lg animated">
+        <section className="h-[130vh] relative flex flex-col items-center bg-black text-white" id="carousel_a12b">
+        <div className="absolute w-full h-[50vh] bg-customYellow"></div>
+        <div className="absolute top-10 max-w-screen-lg py-12 mx-auto bg-white grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+          <div className="p-8  text-black">
             <h3 className="text-3xl mb-4">Contact Us</h3>
             <p className="text-lg mb-8">We'd love to hear from you.</p>
             <form action="https://forms.nicepagesrv.com/Form/Process" className="space-y-6">
@@ -64,7 +63,7 @@ const ContactSection = () => {
           </div>
   
           {/* Working Hours and Call Us */}
-          <div className="p-8 bg-white text-black rounded-lg shadow-lg">
+          <div className="p-8 text-black">
             <h4 className="text-2xl mb-4">Working Hours</h4>
             <p className="text-lg mb-8">Mon – Fri: 10 am – 8 pm, Sat – Sun: Closed</p>
             <h4 className="text-2xl mb-4">Call Us</h4>
@@ -83,7 +82,7 @@ const ContactSection = () => {
           </div>
   
           {/* Location */}
-          <div className="p-8 bg-white text-black rounded-lg shadow-lg">
+          <div className="p-8 text-black">
             <h4 className="text-2xl mb-4">Location</h4>
             <p className="text-lg mb-4">
               Design Studio<br />
