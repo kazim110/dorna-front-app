@@ -1,34 +1,35 @@
 import React, { useState } from "react";
+import womenImage from "../assets/person.jpg";
 
 const CostumerSection = () => {
     const testimonials = [
         {
-          image: "/path-to-image1.jpg",
+          image: womenImage,
           text: "Sample text. Click to select the text box. Click again or double click to start editing the text.",
           name: "Stella Larson",
         },
         {
-          image: "/path-to-image2.jpg",
+          image: womenImage,
           text: "Sample text. Click to select the text box. Click again or double click to start editing the text.",
           name: "Nick Johnson",
         },
         {
-          image: "/path-to-image3.jpg",
+          image: womenImage,
           text: "Sample text. Click to select the text box. Click again or double click to start editing the text.",
           name: "Olga Ivanova",
         },
         {
-          image: "/path-to-image4.jpg",
+          image: womenImage,
           text: "Sample text. Click to select the text box. Click again or double click to start editing the text.",
           name: "Paul Hudson",
         },
         {
-          image: "/path-to-image5.jpg",
+          image: womenImage,
           text: "Sample text. Click to select the text box. Click again or double click to start editing the text.",
           name: "Cash Hudson",
         },
         {
-          image: "/path-to-image6.jpg",
+          image: womenImage,
           text: "Sample text. Click to select the text box. Click again or double click to start editing the text.",
           name: "Mike Perry",
         },
@@ -46,19 +47,25 @@ const CostumerSection = () => {
   
           {/* Testimonials Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <div key={index}
-                className="flex flex-col items-start text-start bg-none p-6 text-center animate-customAnimationIn2"
-                style={{ animationDelay: `${index * 100}ms` }}>
-                <div
-                  className="w-24 h-24 mx-auto mb-4 rounded-full border-8 border-customYellow bg-cover bg-center"
-                  style={{ backgroundImage: `url(${testimonial.image})` }}
-                ></div>
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="flex items-center bg-none  animate-customAnimationIn2 px-12"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <img
+                src={testimonial.image}
+                alt={`${testimonial.name}'s testimonial`}
+                className="m-4 w-24 h-24 rounded sm:rounded-full lg:rounded-full object-cover border-[12px] border-customYellow object-cover"
+              />
+              <div className="p-6 text-start flex flex-col items-start">
                 <p className="text-gray-600 italic mb-2">{testimonial.text}</p>
                 <h6 className="text-gray-800 font-semibold">{testimonial.name}</h6>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
+
         </div>
       </section>
     )

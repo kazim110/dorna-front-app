@@ -6,6 +6,7 @@ export default {
       colors: {
         customYellow: "#ffc000",
         customGreen: "#00514B",
+        customGreenLight: "#2c7c7c",
       },
       animation: {
         "custom-animation": "fadeIn 1.5s ease-in-out",

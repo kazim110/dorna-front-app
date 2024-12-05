@@ -31,11 +31,7 @@ const GallerySection = () => {
     return (
         <div className="relative max-w-3xl mx-auto py-10">
         <div className="mb-4">
-            <h2 className="text-2xl font-bold">Slideshow Indicators</h2>
-            <p className="text-gray-600">
-            Using images to indicate how many slides there are in the slideshow,
-            and highlight the image the user is currently viewing.
-            </p>
+            <h2 className="text-2xl font-bold">We create, restore & evolve iconic brands</h2>
         </div>
     
         {/* Slideshow */}
