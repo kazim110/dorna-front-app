@@ -9,20 +9,20 @@ const AbouteSection = () => {
       className="relative flex flex-col justify-center items-center bg-gray-200 pt-[12%] pb-[10px]"
       id="carousel_1e99"
     >
-      <div className="relative h-[100vh] border container mx-auto flex flex-wrap">
+      <div className="relative border container mx-auto flex">
 
         <div
-          className="bg-customYellow rounded-full animate-custom-animation will-change-transform opacity transition-opacity duration-[1500ms] absolute w-[366px] h-[366px] top-0 right-0 translate-x-1/6 -translate-y-1/3"
+          className="bg-customYellow rounded-full animate-custom-animation will-change-transform opacity transition-opacity duration-[1500ms] absolute w-36 h-36 sm:w-48 sm:h-48 md:w-[320px] md:h-[320px] top-0 right-0 translate-x-1/6 -translate-y-1/3"
           style={{ animationDelay: "500ms" }}
         ></div>
-        <div className="py-8 flex z-10 flex-wrap lg:flex-row-reverse w-full lg:w-2/3 mx-auto mb-[6%]">
+        <div className="py-8 flex z-10 flex-wrap flex-row-reverse w-2/3 mx-auto mb-[6%]">
           <div className="w-full md:w-1/2">
-            <div
-              className="h-full bg-cover bg-center shadow-lg"
+            <img
+              className="h-full w-full object-cover shadow-lg"
+              src={womenImage}
+              alt="Description of image"
+            />
 
-              style={{ backgroundImage: `url(${womenImage})` }}
-              
-            ></div>
           </div>
           <div className="w-full md:w-1/2 text-left flex flex-col item-center justify-center p-[20px]">
             <h3 className="text-xl font-bold mb-4">Web Development</h3>
