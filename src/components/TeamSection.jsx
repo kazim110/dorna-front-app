@@ -42,7 +42,7 @@ const TeamSection = () => {
                 </p>
                 <a
                     href="#"
-                    className="inline-block px-6 py-2 border border-customYellow text-white hover:text-white rounded-lg hover:bg-customGreen transition"
+                    className="inline-block px-6 py-2 border border-customYellow text-white hover:text-white rounded-sm hover:bg-customGreen transition"
                 >
                     Read More
                 </a>
