@@ -36,7 +36,7 @@ const CostumerSection = () => {
       ];
     return (
         <section id="testimonials" className="bg-gray-100 py-12">
-        <div className="container mx-auto px-4">
+        <div className="container w-[80%] mx-auto px-4">
           {/* Section Header */}
           <h2
             className="text-4xl font-bold text-center mb-8 animate-customAnimationIn2"
@@ -50,13 +50,13 @@ const CostumerSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="flex items-center bg-none  animate-customAnimationIn2 px-12"
+              className="flex items-center bg-none  animate-customAnimationIn2"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <img
                 src={testimonial.image}
                 alt={`${testimonial.name}'s testimonial`}
-                className="m-4 w-24 h-24 rounded sm:rounded-full lg:rounded-full object-cover border-[12px] border-customYellow object-cover"
+                className="m-4 w-24 h-24 rounded rounded-full object-cover border-8 border-customYellow object-cover"
               />
               <div className="p-6 text-start flex flex-col items-start">
                 <p className="text-gray-600 italic mb-2">{testimonial.text}</p>
