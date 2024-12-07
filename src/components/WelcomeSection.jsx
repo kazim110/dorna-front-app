@@ -17,8 +17,8 @@ const WelcomeSection = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud.
           </p>
-          <button className="active:bg-black rounded hover:bg-customGreen bg-customYellow  hover:text-white px-20 py-5">
-            <p className="">Get Started</p>
+          <button className="active:bg-black rounded hover:bg-customGreen bg-customYellow  hover:text-white px-32 py-5">
+            <p className="uppercase text-xl">Get Started</p>
           </button>
         </div>
       </section>
