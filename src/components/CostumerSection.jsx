@@ -39,7 +39,7 @@ const CostumerSection = () => {
         <div className="container w-[80%] mx-auto px-4">
           {/* Section Header */}
           <h2
-            className="text-4xl font-bold text-center mb-8 animate-customAnimationIn2"
+            className="text-4xl font-bold uppercase text-center mb-8 animate-customAnimationIn2"
             style={{ animationDelay: "500ms" }}
           >
             Testimonials
@@ -56,11 +56,11 @@ const CostumerSection = () => {
               <img
                 src={testimonial.image}
                 alt={`${testimonial.name}'s testimonial`}
-                className="m-4 w-24 h-24 rounded rounded-full object-cover border-8 border-customYellow object-cover"
+                className="m-4 w-24 h-24 rounded rounded-full object-cover border-[10px] border-customYellow object-cover"
               />
               <div className="p-6 text-start flex flex-col items-start">
                 <p className="text-gray-600 italic mb-2">{testimonial.text}</p>
-                <h6 className="text-gray-800 font-semibold">{testimonial.name}</h6>
+                <h6 className="text-gray-800 font-semibold uppercase">{testimonial.name}</h6>
               </div>
             </div>
           ))}
