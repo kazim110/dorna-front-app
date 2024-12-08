@@ -4,12 +4,11 @@ import React, { useState } from "react";
 
 const PortfolioSection = () => {
     return (
-        <section className="relative bg-customYellow py-10" id="carousel_02fc">
-        <div className="container mx-auto flex justify-center">
+        <section className="bg-customYellow flex justify-center" id="carousel_02fc">
+        <div className="relative container  py-10 flex justify-center items-center">
           {/* Decorative SVG Shape */}
-          <div className="h-[100%] w-[100%] pt-24 flex justify-center absolute top-0 left-0 transform delay-500">
+          <div className="h-[70vh] w-full md:h-2/3 md:w-full lg:h-full py-24 mb:10 flex justify-center absolute top-0 left-0 transform delay-500">
             <svg
-              className="h-[130vh] w-[180vh]"
               preserveAspectRatio="none"
               viewBox="0 0 160 150"
             >
@@ -24,7 +23,7 @@ const PortfolioSection = () => {
           </div>
   
           {/* Main Content */}
-          <div className="relative w-[80%] mt-24">
+          <div className="relative grid w-[80%] mt-24">
             <img
               src="//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/5f2cac1f3cfd566a91b4507b/gffgfgfg-min.jpg"
               alt=""
@@ -32,7 +31,7 @@ const PortfolioSection = () => {
             />
   
             {/* List Section */}
-            <div className="w-[85%] grid gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-self-end -translate-y-1/3">
+            <div className="w-[85%] grid gap-6 md:grid-cols-2 lg:grid-cols-3 justify-self-end -translate-y-[68px] ">
               {[1, 2, 3].map((item) => (
                 <div
                   key={item}
