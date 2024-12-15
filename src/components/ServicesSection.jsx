@@ -48,7 +48,7 @@ const ServicesSection = () => {
       >
         <div className="flex flex-col w-[60%] md:w-[60%] lg:[45%] items-center justify-center mt-10">
           <div className="max-w-5xl">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4">Epic Design and Engineering</h2>
+            <h2 className="text-customGreen text-2xl md:text-4xl font-bold mb-4">Epic Design and Engineering</h2>
             <p className="text-md md:text-lg text-gray-700 mb-6">
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
@@ -66,7 +66,7 @@ const ServicesSection = () => {
                   <span>{feature.icon}</span>
                 </div>
                 <h5 className="text-xl font-semibold mb-2">{feature.title}</h5>
-                <p className="text-gray-800">{feature.description}</p>
+                <p className="text-customGreen">{feature.description}</p>
               </div>
             ))}
           </div>

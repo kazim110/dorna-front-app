@@ -25,12 +25,12 @@ const AbouteSection = () => {
 
           </div>
           <div className="w-full md:w-1/2 text-left flex flex-col item-center justify-center p-[20px]">
-            <h3 className="text-xl font-bold mb-4">Web Development</h3>
+            <h3 className="text-customGreen text-xl font-bold mb-4">Web Development</h3>
             <p className="text-gray-700 mb-4">Quickly incentivize impactful action items before tactical collaboration and idea-sharing. Monotonically engage market-driven intellectual capital  wireless opportunities. Progressively network performance based services for functionalized testing procedures.
             </p>
             <a
               href="#"
-              className="inline-block bg-black text-white py-2 px-4 rounded-md hover:bg-blue-500 transition"
+              className="inline-block bg-customGreen text-white py-2 px-4 rounded-md hover:bg-customYellow hover:text-white transition"
             >
               Learn More
             </a>

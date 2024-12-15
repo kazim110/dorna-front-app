@@ -4,11 +4,11 @@ const ContactSection = () => {
 
   return (
       <section id="carousel_a12b">
-        <div className="relative flex flex-col items-center bg-black">
+        <div className="relative flex flex-col items-center bg-customGreen">
           <div className="absolute w-full h-[50%] bg-customYellow"></div>
           <div className="z-10 my-10 max-w-screen-lg py-12 mx-10 bg-white grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
           
-            <div className="p-8  text-black">
+            <div className="p-8  text-customGreen">
               <h3 className="text-3xl mb-4 font-bold">Contact Us</h3>
               <p className="text-lg mb-8">We'd love to hear from you.</p>
               <form action="https://forms.nicepagesrv.com/Form/Process" className="space-y-6">
@@ -52,7 +52,7 @@ const ContactSection = () => {
                 <div className="flex justify-start">
                   <button
                     type="submit"
-                    className="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition duration-200"
+                    className="bg-customGreen text-white py-3 px-6 rounded-lg hover:bg-customYellow transition duration-200"
                   >
                     Submit
                   </button>
@@ -65,7 +65,7 @@ const ContactSection = () => {
             </div>
     
             {/* Working Hours and Call Us */}
-            <div className="p-8 text-black">
+            <div className="p-8 text-customGreen">
               <h4 className="text-2xl mb-4 font-bold">Working Hours</h4>
               <p className="text-lg mb-8">Mon – Fri: 10 am – 8 pm, Sat – Sun: Closed</p>
               <h4 className="text-2xl mb-4">Call Us</h4>
@@ -84,7 +84,7 @@ const ContactSection = () => {
             </div>
     
             {/* Location */}
-            <div className="p-8 text-black">
+            <div className="p-8 text-customGreen">
               <h4 className="text-2xl mb-4 font-bold">Location</h4>
               <p className="text-lg mb-4">
                 Design Studio<br />

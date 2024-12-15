@@ -33,7 +33,7 @@ const TeamSection = () => {
                         style={{ animationDelay: "250ms" }}
                     />
                 </div>
-                <div className="mx-20 sm:ml-36 z-10 bg-black text-white rounded-sm p-6 shadow-lg max-w-lg text-left md:translate-x-1/4 -translate-y-40 sm:-translate-y-64">
+                <div className="mx-20 sm:ml-36 z-10 bg-customGreen text-white rounded-sm p-6 shadow-lg max-w-lg text-left md:translate-x-1/4 -translate-y-40 sm:-translate-y-64">
                 <h2 className="text-3xl font-bold mb-4">Our Team</h2>
                 <p className="text-gray-300 mb-4">
                     Nunc mi ipsum faucibus vitae aliquet. Pellentesque elit eget gravida cum
@@ -42,7 +42,7 @@ const TeamSection = () => {
                 </p>
                 <a
                     href="#"
-                    className="inline-block px-6 py-2 border border-customYellow text-white hover:text-white rounded-sm hover:bg-customGreen transition"
+                    className="inline-block px-6 py-2 border border-customYellow text-white hover:text-white rounded-sm hover:bg-customYellow transition"
                 >
                     Read More
                 </a>
