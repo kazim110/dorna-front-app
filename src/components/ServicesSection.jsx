@@ -1,45 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import secBack from "../assets/sec-back.jpg";
+import axios from "axios";
+import womenImage from "../assets/women.jpg"
 
 const ServicesSection = () => {
-    const features = [
-        {
-          title: "Strategy",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.",
-          icon: "icon1", // Add SVG or an icon class here
-        },
-        {
-          title: "Branding",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.",
-          icon: "icon2", // Add SVG or an icon class here
-        },
-        {
-          title: "Development",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.",
-          icon: "icon3", // Add SVG or an icon class here
-        },
-        {
-          title: "Web Design",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.",
-          icon: "icon4", // Add SVG or an icon class here
-        },
-        {
-          title: "Social Media",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.",
-          icon: "icon5", // Add SVG or an icon class here
-        },
-        {
-          title: "Ecommerce",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.",
-          icon: "icon6", // Add SVG or an icon class here
-        },
-      ];
+
+    const [features, setFeatures] = useState([]);
+
+    useEffect(()=>{
+      const fetchFeatures = async () => {
+        try {
+          const response = await axios.get("http://127.0.0.1:8000/service/api");
+          const data = response.data.map((item) => ({
+            image: `http://127.0.0.1:8000/storage/${item.image}`,
+            description: item.description,
+            title: item.title,
+          }));
+          setFeatures(data);
+        } catch (error) {
+          console.error("Error fetching services:", error);
+        }
+      };
+      fetchFeatures();
+    }, []);
+
     return (
         <section
         id="features"
@@ -56,19 +40,19 @@ const ServicesSection = () => {
           </div>
   
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-start bg-customYellow text-white rounded-lg p-6 shadow-lg transition-transform duration-500 hover:scale-105"
-              >
-                <div className="flex items-center justify-center w-12 h-12 bg-white text-green-600 rounded-full mb-4">
-                  {/* Replace with actual SVG */}
-                  <span>{feature.icon}</span>
+            {features.length > 0 ? (
+              features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-start bg-customYellow text-white rounded-lg p-6 shadow-lg transition-transform duration-500 hover:scale-105"
+                >
+                  <img className="self-center w-20 h-20 bg-white text-green-600 rounded-full mb-4" src={feature.image} alt="" />
+                  <h5 className="text-xl font-semibold mb-2">{feature.title}</h5>
+                  <p className="text-customGreen">{feature.description}</p>
                 </div>
-                <h5 className="text-xl font-semibold mb-2">{feature.title}</h5>
-                <p className="text-customGreen">{feature.description}</p>
-              </div>
-            ))}
+              ))) : (
+                <p className="text-center text-gray-500">Loading Services...</p>
+              )}
           </div>
         </div>
       </section>

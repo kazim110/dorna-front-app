@@ -32,7 +32,7 @@ const CostumerSection = () => {
             className="text-customGreen text-5xl font-bold uppercase text-center mb-8 animate-customAnimationIn2"
             style={{ animationDelay: "500ms" }}
           >
-            Testimonials
+            Customers
           </h2>
   
           {/* Testimonials Grid */}
@@ -55,7 +55,7 @@ const CostumerSection = () => {
               </div>
             </div>
           ))) : (
-            <p className="text-center text-gray-500">Loading testimonials...</p>
+            <p className="text-center text-gray-500">Loading Customers...</p>
           )}
         </div>
 
