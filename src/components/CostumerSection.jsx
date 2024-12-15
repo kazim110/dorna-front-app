@@ -11,7 +11,7 @@ const CostumerSection = () => {
       try {
         const response = await axios.get("http://127.0.0.1:8000/customer/api");
         const data = response.data.map((item) => ({
-          image: `http://127.0.0.1:8000/${item.image}`,
+          image: `http://127.0.0.1:8000/storage/${item.image}`,
           text: item.message,
           name: item.name,
         }));
