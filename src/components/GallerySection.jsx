@@ -31,7 +31,7 @@ const GallerySection = () => {
     return (
         <div className="relative max-w-3xl mx-auto py-10">
         <div className="mb-4">
-            <h2 className="text-customGreen text-6xl text-center font-bold pb-10">We create, restore & evolve iconic brands</h2>
+            <h2 className="text-customGreen text-5xl text-center font-bold pb-10">We create, restore & evolve iconic brands</h2>
         </div>
     
         {/* Slideshow */}

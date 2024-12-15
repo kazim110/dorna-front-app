@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import logo from "../assets/dorna-logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,19 +15,16 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center text-xl font-bold hover:text-gray-200 transition">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
+            src={logo}
             className="h-8"
             alt="Flowbite Logo"
           />
-          <span className="self-center text-2xl font-semibold text-customGreen whitespace-nowrap dark:text-white">
-            Flowbite
-          </span>
         </Link>
 
         {/* Hamburger Menu Button */}
         <button
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden bg-customGreen hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-expanded={isMenuOpen ? "true" : "false"}
           onClick={toggleMenu}
         >
@@ -58,7 +56,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className="text-base text-customGreen hover:text-gray-200 transition"
+                className="text-base text-customGreen hover:text-white transition"
               >
                 Home
               </Link>
@@ -66,7 +64,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about"
-                className="text-base text-customGreen hover:text-gray-200 transition"
+                className="text-base text-customGreen hover:text-white transition"
               >
                 About
               </Link>
@@ -74,7 +72,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/services"
-                className="text-base text-customGreen hover:text-gray-200 transition"
+                className="text-base text-customGreen hover:text-white transition"
               >
                 Services
               </Link>
@@ -82,7 +80,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/contact"
-                className="text-base text-customGreen hover:text-gray-200 transition"
+                className="text-base text-customGreen hover:text-white transition"
               >
                 Contact
               </Link>

@@ -29,7 +29,7 @@ const CostumerSection = () => {
         <div className="container w-[80%] mx-auto px-4">
           {/* Section Header */}
           <h2
-            className="text-4xl font-bold uppercase text-center mb-8 animate-customAnimationIn2"
+            className="text-customGreen text-5xl font-bold uppercase text-center mb-8 animate-customAnimationIn2"
             style={{ animationDelay: "500ms" }}
           >
             Testimonials

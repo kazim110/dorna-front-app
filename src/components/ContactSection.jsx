@@ -22,7 +22,7 @@ const ContactSection = () => {
                       id="name"
                       name="name"
                       placeholder="Enter your Name"
-                      className="border-2 border-gray-600 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="border-2 border-customGreen rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                       required
                     />
                   </div>
@@ -33,7 +33,7 @@ const ContactSection = () => {
                       id="email"
                       name="email"
                       placeholder="Enter a valid email address"
-                      className="border-2 border-gray-600 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="border-2 border-customGreen rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                       required
                     />
                   </div>
@@ -44,7 +44,7 @@ const ContactSection = () => {
                       name="message"
                       placeholder="Your message"
                       rows="4"
-                      className="border-2 border-gray-600 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                      className="border-2 border-customGreen rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                       required
                     ></textarea>
                   </div>
@@ -84,7 +84,7 @@ const ContactSection = () => {
             </div>
     
             {/* Location */}
-            <div className="p-8 text-customGreen">
+            <div className="p-4 text-customGreen">
               <h4 className="text-2xl mb-4 font-bold">Location</h4>
               <p className="text-lg mb-4">
                 Design Studio<br />
@@ -94,7 +94,7 @@ const ContactSection = () => {
               <p className="text-lg">
                 <a
                   href="mailto:contactus@designstudio.com"
-                  className="text-blue-500 hover:text-blue-700"
+                  className="break-words text-blue-500 hover:text-blue-700"
                 >
                   contactus@designstudio.com
                 </a>
