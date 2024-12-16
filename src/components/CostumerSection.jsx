@@ -35,29 +35,35 @@ const CostumerSection = () => {
             Customers
           </h2>
   
-          {/* Testimonials Grid */}
+                  {/* Testimonials Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          {testimonials.length > 0 ? (
-            testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="flex items-center bg-none  animate-customAnimationIn2"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <img
-                src={testimonial.image}
-                alt={`${testimonial.name}'s testimonial`}
-                className="m-4 w-24 h-24 rounded rounded-full object-cover border-[10px] border-customYellow object-cover"
-              />
-              <div className="p-6 text-start flex flex-col items-start">
-                <p className="text-gray-600 italic mb-2">{testimonial.text}</p>
-                <h6 className="text-gray-800 font-semibold uppercase">{testimonial.name}</h6>
-              </div>
-            </div>
-          ))) : (
-            <p className="text-center text-gray-500">Loading Customers...</p>
-          )}
-        </div>
+            {testimonials.length > 0 ? (
+              testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="flex items-center bg-none animate-customAnimationIn2"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  {/* Circle container for the image */}
+                  <div className="w-24 h-24 rounded-full overflow-hidden border-[10px] border-customYellow flex-shrink-0">
+                    <img
+                      src={testimonial.image}
+                      alt={`${testimonial.name}'s testimonial`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Text container */}
+                  <div className="p-6 text-start flex flex-col items-start">
+                    <p className="text-gray-600 italic mb-2 line-clamp-3">{testimonial.text}</p>
+                    <h6 className="text-gray-800 font-semibold uppercase">{testimonial.name}</h6>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <p className="text-center text-gray-500">Loading Customers...</p>
+            )}
+          </div>
 
         </div>
       </section>
