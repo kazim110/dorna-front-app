@@ -52,38 +52,54 @@ const Navbar = () => {
             isMenuOpen ? "block" : "hidden"
           } absolute top-16 left-0 w-full bg-customYellow md:static md:block md:w-auto md:flex-row md:space-x-8 p-4 md:p-0 md:border-0`}
         >
-          <ul className="font-medium flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-8 rtl:space-x-reverse">
+<ul className="font-medium flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-8 rtl:space-x-reverse">
             <li>
-              <Link
-                to="/"
+              <a
+                href="#home"
                 className="text-base text-customGreen hover:text-white transition"
               >
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/about"
+              <a
+                href="#about"
                 className="text-base text-customGreen hover:text-white transition"
               >
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/services"
+              <a
+                href="#portfolios"
+                className="text-base text-customGreen hover:text-white transition"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a
+                href="#features"
                 className="text-base text-customGreen hover:text-white transition"
               >
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/contact"
+              <a
+                href="#customers"
+                className="text-base text-customGreen hover:text-white transition"
+              >
+                Customer
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
                 className="text-base text-customGreen hover:text-white transition"
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

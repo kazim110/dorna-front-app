@@ -49,7 +49,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="carousel_a12b">
+    <section id="contact">
       <div className="relative flex flex-col items-center bg-customGreen">
         <div className="absolute w-full h-[50%] bg-customYellow"></div>
         <div className="z-10 my-10 max-w-screen-lg py-12 mx-10 bg-white grid grid-cols-1 md:grid-cols-3 gap-8 px-6">

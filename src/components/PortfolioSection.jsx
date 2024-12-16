@@ -30,7 +30,7 @@ const PortfolioSection = () => {
   const closeModal = () => setSelectedItem(null);
 
   return (
-    <section className="bg-customYellow flex justify-center" id="carousel_02fc">
+    <section id="portfolios" className="bg-customYellow flex justify-center">
       <div className="relative container py-10 flex justify-center items-center">
         {/* Decorative SVG Shape */}
         <div className="h-[70vh] w-full md:h-2/3 md:w-full lg:h-full py-24 mb:10 flex justify-center absolute top-0 left-0 transform delay-500">

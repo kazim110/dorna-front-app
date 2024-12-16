@@ -34,7 +34,7 @@ const AbouteSection = () => {
   return (
     <section
       className="relative flex flex-col justify-center items-center bg-gray-200 pt-[12%] pb-[10px]"
-      id="carousel_1e99"
+      id="about"
     >
       <div className="relative container mx-auto flex">
         <div

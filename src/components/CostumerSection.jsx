@@ -25,7 +25,7 @@ const CostumerSection = () => {
 
 
     return (
-        <section id="testimonials" className="bg-gray-100 py-12">
+        <section id="customers" className="bg-gray-100 py-12">
         <div className="container w-[80%] mx-auto px-4">
           {/* Section Header */}
           <h2
