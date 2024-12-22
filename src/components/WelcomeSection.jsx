@@ -5,7 +5,7 @@ import backgroundImage from "../assets/main-back.jpg";
 const WelcomeSection = () => {
 
     return (
-        <section className="bg-blue-500 text-white text-center">
+        <section id="welcome" className="bg-blue-500 text-white text-center">
         <div
           className="bg-cover bg-center h-[1080px] flex items-center justify-center flex-col"
           style={{ backgroundImage: `url(${backgroundImage})` }}
@@ -17,9 +17,12 @@ const WelcomeSection = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
             minim veniam, quis nostrud.
           </p>
-          <button className="active:bg-black rounded hover:bg-customGreen bg-customYellow  hover:text-white px-32 py-5">
-            <p className="uppercase text-xl">Get Started</p>
-          </button>
+          <a
+          href="#contact" // Link to the contact section
+          className="active:bg-black rounded hover:bg-customGreen bg-customYellow text-customGreen hover:text-white px-32 py-5"
+        >
+          <p className="uppercase text-xl">Get Started</p>
+        </a>
         </div>
       </section>
     );
