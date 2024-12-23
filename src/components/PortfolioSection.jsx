@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { ENV } from "../const/ENV";
 
 const PortfolioSection = () => {
   const [portfolioItems, setPortfolioItems] = useState([]);
@@ -6,7 +7,7 @@ const PortfolioSection = () => {
 
   useEffect(() => {
     // Fetch the portfolio items from the API
-    fetch("http://127.0.0.1:8000/portfolio/api")
+    fetch(ENV.api_url+"/portfolio/api")
       .then((response) => response.json())
       .then((data) => {
         // Extract the last four items
@@ -49,7 +50,7 @@ const PortfolioSection = () => {
         <div className="relative grid w-[80%] mt-24">
           {/* Display the first item's image */}
           <img
-            src={`http://127.0.0.1:8000/storage/${firstItem.image}`}
+            src={`${ENV.api_url}/storage/${firstItem.image}`}
             alt={firstItem.title}
             className="rounded-lg shadow-lg w-[85%] justify-self-start"
           />
@@ -62,7 +63,7 @@ const PortfolioSection = () => {
                 className="rounded-lg bg-white shadow-md p-5 hover:shadow-lg transition-transform transform hover:scale-105"
               >
                 <img
-                  src={`http://127.0.0.1:8000/storage/${item.image}`}
+                  src={`${ENV.api_url}/storage/${item.image}`}
                   alt={item.title}
                   className="rounded-md mb-4 w-full"
                 />
@@ -100,7 +101,7 @@ const PortfolioSection = () => {
 
       {/* Smaller Image */}
       <img
-        src={`http://127.0.0.1:8000/storage/${selectedItem.image}`}
+        src={`${ENV.api_url}/storage/${selectedItem.image}`}
         alt={selectedItem.title}
         className="rounded-md mb-4 w-[60%] h-auto object-cover mx-auto" // Adjusted size here
       />

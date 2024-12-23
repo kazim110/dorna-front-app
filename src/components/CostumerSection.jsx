@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import womenImage from "../assets/person.jpg";
 import axios from "axios";
+import { ENV } from "../const/ENV";
 
 const CostumerSection = () => {
 
@@ -9,9 +10,9 @@ const CostumerSection = () => {
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/customer/api");
+        const response = await axios.get(ENV.api_url+"/customer/api");
         const data = response.data.map((item) => ({
-          image: `http://127.0.0.1:8000/storage/${item.image}`,
+          image: `${ENV.api_url}/storage/${item.image}`,
           text: item.message,
           name: item.name,
         }));
