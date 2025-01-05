@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { ENV } from "../const/ENV";
 
 const AbouteSection = () => {
   const [about, setAbout] = useState(null);
@@ -9,13 +10,13 @@ const AbouteSection = () => {
   useEffect(() => {
     const fetchAbout = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/about/api");
+        const response = await axios.get(ENV.api_url+"/about/api");
         const { title, description, image } = response.data;
 
         setAbout({
           title,
           description,
-          image: `http://127.0.0.1:8000/storage/${image}`,
+          image: `${ENV.api_url}/storage/${image}`,
         });
 
         setIsLoading(false);

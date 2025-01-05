@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { ENV } from "../const/ENV";
 
 const TeamSection = () => {
   const [teamImages, setTeamImages] = useState([]);
@@ -9,7 +10,7 @@ const TeamSection = () => {
   useEffect(() => {
     const fetchTeamData = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/team/api");
+        const response = await axios.get(ENV.api_url+"/team/api");
         const images = response.data;
         const lastFourImages = images.slice(-4).map((item) => item.image);
         setTeamImages(lastFourImages);
@@ -31,7 +32,7 @@ const TeamSection = () => {
       {teamImages.length > 0 && (
         <img
           className="absolute bg-gray-200 sm:bg-none z-10 top-5 right-auto left-[38%] sm:left-[54%] w-48 h-48 md:h-64 md:w-64 border-4 border-customYellow object-cover rounded-full animate-customAnimationIn"
-          src={`http://127.0.0.1:8000/storage/${teamImages[0]}`}
+          src={`${ENV.api_url}/storage/${teamImages[0]}`}
           alt="Team Member"
           style={{ animationDelay: "750ms" }}
         />
@@ -48,7 +49,7 @@ const TeamSection = () => {
                   ? " w-64 h-64 sm:w-[432px] sm:h-[432px] -translate-y-1/4 translate-x-1/2 md:-translate-x-1 shadow-xl bg-gray-300"
                   : "-translate-y-2/3 sm:-translate-y-52 md:-translate-x-2/3 shadow-xl bg-gray-400"
               }`}
-              src={`http://127.0.0.1:8000/storage/${image}`}
+              src={`${ENV.api_url}/storage/${image}`}
               alt={`Team Member ${index + 2}`}
             />
           ))}
@@ -93,7 +94,7 @@ const TeamSection = () => {
                   className="flex flex-col items-center text-white bg-customGreen p-4 rounded-lg shadow"
                 >
                   <img
-                    src={`http://127.0.0.1:8000/storage/${member.image}`}
+                    src={`${ENV.api_url}/storage/${member.image}`}
                     alt={member.name}
                     className="w-32 h-32 object-cover rounded-full mb-3"
                   />

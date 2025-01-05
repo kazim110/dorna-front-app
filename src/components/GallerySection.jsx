@@ -4,6 +4,7 @@ import g1 from "../assets/g1.jpg";
 import g2 from "../assets/g2.jpg";
 import g3 from "../assets/g3.jpg";
 import axios from "axios";
+import { ENV } from "../const/ENV";
 
 const GallerySection = () => {
 
@@ -13,9 +14,9 @@ const GallerySection = () => {
     useEffect(() => {
       const fetchSlides = async () => {
         try {
-          const response = await axios.get("http://127.0.0.1:8000/gallery/api");
+          const response = await axios.get(ENV.api_url+"/gallery/api");
           const data = response.data.map((item) => ({
-            image: `http://127.0.0.1:8000/storage/${item.image}`,
+            image: `${ENV.api_url}/storage/${item.image}`,
             name: item.title,
           }));
           setSlides(data);

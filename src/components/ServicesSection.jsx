@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import secBack from "../assets/sec-back.jpg";
 import axios from "axios";
+import { ENV } from "../const/ENV";
 
 const ServicesSection = () => {
   const [features, setFeatures] = useState([]);
@@ -9,9 +10,9 @@ const ServicesSection = () => {
   useEffect(() => {
     const fetchFeatures = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/service/api");
+        const response = await axios.get(ENV.api_url+"/service/api");
         const data = response.data.map((item) => ({
-          image: `http://127.0.0.1:8000/storage/${item.image}`,
+          image: `${ENV.api_url}/storage/${item.image}`,
           description: item.description,
           title: item.title,
         }));
