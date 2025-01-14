@@ -121,7 +121,7 @@ const ContactSection = () => {
           {/* Working Hours and Call Us */}
           <div className="p-8 text-customGreen">
             <h4 className="text-2xl mb-4 font-bold">Working Hours</h4>
-            <p className="text-lg mb-8">Mon – Fri: 10 am – 8 pm, Sat – Sun: Closed</p>
+            <p className="text-lg mb-8">Sa – Th: 8 am – 4 pm, Fri: Closed</p>
             <h4 className="text-2xl mb-4">Call Us</h4>
             <a href="tel:+12345678910" className="flex items-center text-blue-500 hover:text-blue-700">
               <svg
@@ -133,7 +133,7 @@ const ContactSection = () => {
                   d="M373.333,266.88c-25.003,0-49.493-3.904-72.704-11.563c-11.328-3.904-24.192-0.896-31.637,6.699l-46.016,34.752c-52.8-28.181-86.592-61.952-114.389-114.368l33.813-44.928c8.512-8.512,11.563-20.971,7.915-32.64C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z"
                 ></path>
               </svg>
-              +1 (234) 567-8910
+              +93 795116116 
             </a>
           </div>
 
@@ -141,16 +141,16 @@ const ContactSection = () => {
           <div className="p-4 text-customGreen">
             <h4 className="text-2xl mb-4 font-bold">Location</h4>
             <p className="text-lg mb-4">
-              Design Studio<br />
-              461 Amsterdam Ave<br />
-              New York, New York 10055
+              Kabul, Afghanistan<br />
+              Shahr-e-Naw, Ansari Square, Park Tower,<br />
+              4th Floor, Office 407 & 408
             </p>
             <p className="text-lg">
               <a
                 href="mailto:contactus@designstudio.com"
                 className="break-words text-blue-500 hover:text-blue-700"
               >
-                contactus@designstudio.com
+                info@dorna-media.com
               </a>
             </p>
           </div>
