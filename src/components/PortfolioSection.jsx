@@ -20,7 +20,7 @@ const PortfolioSection = () => {
   }, []);
 
   // Ensure we have at least four items before rendering
-  if (portfolioItems.length < 4) {
+  if (portfolioItems.length < 1) {
     return <div>Loading...</div>;
   }
 
