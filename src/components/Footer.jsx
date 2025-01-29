@@ -5,7 +5,7 @@ import safiLogo from '../assets/safi-logo.png';
 const Footer = () => (
   <footer className="bg-black text-white py-8">
   <div className="flex flex-col justify-center items-center max-w-screen-xl mx-auto text-center">
-    <h4 className='sm-text-xl text-4xl font-bold uppercase'>Partnerships</h4>
+    <h4 className='sm-text-lg mb-4 text-4xl font-bold uppercase'>Partnerships</h4>
     <div className='flex flex-row justify-around'>
       <img className='w-[20%]' src={reflexLogo} alt="Reflex Creative Group" />
       <img className='w-[20%]' src={avanLogo} alt="Reflex Creative Group" />
