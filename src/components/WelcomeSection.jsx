@@ -8,7 +8,10 @@ const WelcomeSection = () => {
         <section id="welcome" className="bg-blue-500 text-white text-center">
         <div
           className="bg-cover bg-center h-[1080px] flex items-center justify-center flex-col"
-          // style={{ backgroundImage: `url(${backgroundImage})` }}
+          style={{ 
+            backgroundColor: "#f2f2f2"
+            // backgroundImage: `url(${backgroundImage})` 
+          }}
         >
           <h1 className="w-[80%] lg:text-8xl text-6xl uppercase text-customGreen font-bold">Dorna Media</h1>
           <h2 className="text-xl lg:text-6xl font-medium text-customGreen relative">On Creativity Line</h2>
